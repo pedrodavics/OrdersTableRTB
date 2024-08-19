@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import Orders from '../components/OrdersTable.vue';
-import Info from '../components/Info.vue';
+import Info from '../components/InfoPage.vue';
 const routes = [
     {
         path: '/',
