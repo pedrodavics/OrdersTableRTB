@@ -1,4 +1,11 @@
-import { createApp } from 'vue'
-import App from './App.vue'
+import { createApp } from 'vue';
+import App from './App.vue';
+import router from './router';
 
-createApp(App).mount('#app')
+try {
+    const app = createApp(App);
+    app.use(router);
+    app.mount('#app');
+} catch (error) {
+       console.error('Failed to initialize the Vue application:', error);
+}
